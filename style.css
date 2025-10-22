@@ -1,0 +1,1239 @@
+/* -------------------------- colors -------------------------- */
+:root{
+    --primary:#FFB30E;
+    --secondary:#F17228;
+    --gradient: linear-gradient(90deg, #FFBA26 , #FF9A0E);
+    --background: #FFFFFF;
+    --grey:#9E9E9E;
+    --gradient:linear-gradient(90deg,#FFBA26,#FF9A0E);
+}
+/* -------------------------- reset default css -------------------------- */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+}
+/* -------------------------- font-sizes -------------------------- */
+
+html{
+    font-size: 16px;
+}
+h1{
+    font-size: 2.5rem;
+}
+h2{
+    font-size: 2rem;
+}
+h3{
+    font-size: 1.1rem;
+}
+h4{
+    font-size: 1rem;
+}
+p{
+    font-size: 1rem;
+}
+span{
+    font-size: 1rem;
+}
+
+/* -------------------------- Default Css -------------------------- */
+.width-80{
+    width: 80vw;
+    margin: auto;
+    /* overflow: hidden; */
+}
+
+.row{
+    display: flex;
+}
+
+.grid{
+    display: grid;
+}
+
+button{
+    border:none;
+    border-radius: 6px;
+    padding: 10px 25px;
+    transition: .5s;
+    cursor: pointer;
+}
+button:hover{
+    transform: translateY(-5px);
+}
+
+input{
+    border: none;
+}
+
+.primary-color{
+    color: var(--primary);
+}
+
+.primary-bgcolor{
+    background-color: var(--primary);
+}
+
+.background-white{
+    background-color: var(--background);
+}
+
+.bold{
+    font-weight: 700;
+}
+
+.padding{
+    padding: 40px 0;
+}
+
+/* -------------------------- header start -------------------------- */
+header{
+    background-color: var(--background);
+}
+
+header .row{
+    padding: 10px 3px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.img-container{
+    width: 200px;
+}
+
+.header-btn{
+    justify-content: center;
+    align-items: center;
+    column-gap: 10px;
+}
+
+.header-btn .search-box input{
+    padding: 10px 3px;
+    width: 100px;
+    font-weight: 700;
+    outline: none;
+}
+
+.header-btn button{
+    padding: 10px 20px;
+    color: var(--primary);
+    font-weight: bold;
+    border: var(--primary) 2px solid;
+    border-radius: 5px;
+    background-color: var(--background);
+    box-shadow: 1px 5px 10px 1px ;
+}
+
+.header-btn button:hover{
+    background-color: var(--primary);
+    color: var(--background);
+    box-shadow: 1px 5px 10px 1px #f17228be;
+}
+/* -------------------------- header end -------------------------- */
+
+/* -------------------------- hero section start -------------------------- */
+.hero-section{
+    background: linear-gradient(151deg,rgba(237, 221, 83, 1) 50%, rgba(251, 188, 29, 1) 80%);
+    padding-top: 148.4px;
+    padding-bottom: 0;
+}
+
+.hero-section h1{
+    font-size: 4rem;
+    color:var(--background);
+}
+
+.hero-section p{
+    color: #504F4F;
+    margin: 10px;
+}
+
+.order-form{
+    width: 45vw;
+    padding: 20px;
+    border-radius: 16px;
+}
+
+.hero-section .image{
+    width: 500px;
+    height: 370px;
+    overflow: hidden;
+    justify-content: center;
+}
+
+.order-form .row{
+    gap: 20px;
+}
+
+.btn{
+    padding: 6px 20px;
+    border: none;
+    color: #504F4F;
+    background-color: var(--background);
+    border-radius: 6px;
+    margin: 10px 0;
+}
+
+.active{
+    background-color: #f172282b;
+    color: var(--secondary);
+}
+
+.order-btn{
+    border-bottom: 1px solid #504f4f30 ;
+}
+
+.order-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 5px;
+}
+
+.order-details input{
+    position: relative;
+    width: 350px;
+    padding: 8px 30px;
+    background-color: #F5F5F5;
+    border-radius: 6px;
+}
+
+.order-details .fa-location-dot{
+    position: absolute;
+    top : 73.3%;
+    left: 12.1%;
+    z-index: 100;
+    color: #FF7474;
+}
+
+.order-details button{
+    color: var(--background);
+    background-color: var(--secondary);
+    border: 2px solid var(--secondary);
+    box-shadow: 1px 5px 10px 1px #f17228be;
+}
+
+.order-details button:hover{
+    color: var(--secondary);
+    background-color: var(--background);
+    box-shadow: 1px 12px 10px 1px #f17228be;
+
+}
+/* -------------------------- hero section end -------------------------- */
+
+/* -------------------------- Card grid start -------------------------- */
+.cards-grid {
+    grid-template-columns: auto auto auto auto;
+    gap: 20px;
+    margin-top: 50px;
+}
+
+.cards-grid .active{
+    background-color: #f172282b;
+    color: var(--secondary);
+}
+
+.card {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.2s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.discount {
+    position: relative;
+    left: 0;
+    bottom: 50.9px;
+    background: #ffb300;
+    color: #fff;
+    font-size: 1.1rem;
+    font-weight: bold;
+    padding: 6px 18px;
+    border-top-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    display: inline-block;
+}
+
+.discount span {
+    font-size: 0.8rem;
+    display: block;
+    font-weight: normal;
+}
+
+.card .content {
+    margin-top: -50px;
+    padding: 15px;
+    text-align: center;
+}
+
+.content h3 {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+/* -------------------------- Card grid end -------------------------- */
+
+/* -------------------------- process section start -------------------------- */
+.process-section{
+    margin-top: 20px;
+    background: linear-gradient(180deg,rgba(255, 207, 103, 0.274) 0%, rgb(255, 255, 255) 100%);
+}
+
+.process-section .grid{
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    padding: 0 40px;
+    margin-top: 40px;
+    gap: 20px;
+}
+
+.process-section .width-80 > h2{
+    text-align: center;
+    color: var(--secondary);
+}
+
+.step{
+    text-align: center;
+}
+
+.step p{
+    margin-top: 10px;
+    font-size: 0.9rem;
+    color: var(--grey);
+}
+/* -------------------------- process section end -------------------------- */
+
+/* -------------------------- popular section start -------------------------- */
+.popular-section {
+    margin-top: 20px;
+}
+
+.popular-section .width-80 > h2{
+    text-align: center;
+}
+
+.popular-section .grid{
+    position: relative;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    gap: 10px;
+}
+
+.popular-section .icon-bg{
+    position: absolute;
+    color: var(--background);
+    background-color: #ffb20e;
+    font-size: 2rem;
+    border-radius: 50%;
+    padding: 3px 0;
+    box-shadow: 0px 7px 10px 0px #ffb30e62;
+
+}
+
+.popular-section .fa-angle-left{
+    left: 60px;
+    top: 1650px;
+}
+
+.popular-section .fa-angle-right{
+    right: 60px;
+    top: 1650px;
+}
+
+.item{
+    border-radius: 12px;
+    padding: 15px;
+}
+
+.item img{
+    border-radius: 8px;
+    width: 100%;
+}
+
+.item{
+    text-align: center;
+}
+
+.item div h4{
+    margin-top: 5px;
+}
+
+.item div p {
+    margin: 5px 0;
+    color: var(--primary);
+    font-size: 0.8rem;
+}
+
+.item button{
+    margin: 10px;
+    width: 100%;
+    background-color: var(--secondary);
+    color: var(--background);
+    border: 2px solid var(--secondary);
+    font-size: 1rem;
+    box-shadow: 0px 5px 10px 0px #fd725c88;
+}
+
+.item button:hover{
+    background-color: var(--background);
+    color: var(--secondary);
+    border: 2px solid var(--secondary);
+    box-shadow: 0px 10px 10px 0px #fd725c88;
+}
+
+/* -------------------------- popular section end -------------------------- */
+
+/* -------------------------- featured section start -------------------------- */
+.featured-section {
+    margin-top: -30px;
+}
+
+.featured-section .width-80 > h2{
+    text-align: center;
+}
+
+.featured-section .grid{
+    grid-template-columns: 1fr 1fr 1fr 1fr ;
+    margin-top: 40px;
+    gap: 10px;
+}
+
+.resturant{
+    border-radius: 12px;
+    padding: 15px;
+}
+
+.tags{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    gap: 10px;  
+}
+
+.tags p:first-child{
+    margin-top: 10px;
+    margin-left: 10px;
+    color: var(--background);
+    background-color: var(--secondary);
+    padding: 5px;
+    border-radius: 6px;
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+.tags p:last-child{
+    margin-top: 10px;
+    color: var(--background);
+    background-color: var(--primary);
+    padding: 5px 8px;
+    border-radius: 6px;
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+.resturant >.row{
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+    margin: 5px;
+}
+
+.resturant .row p{
+    color: var(--primary);
+}
+
+.resturant .content img {
+    width: 40px;
+    height: 40px;
+}
+
+.resturant .content >.row{
+    flex-direction: column;
+}
+
+.resturant .resturant-banner{
+    border-radius: 8px;
+    width: 100%;
+}
+
+.resturant .btn {
+    display: block;
+    text-align: center;
+    margin: 20px auto;
+    padding: 10px 15px;
+    width: 75%;
+    border-radius: 14px;
+}
+.resturant .active:hover{
+    background-color: var(--secondary);
+    color: #ffffff;
+}
+.active-2{
+    background-color: #79B93C33;
+    color: #79B93C;
+}
+.active-2:hover{
+    background-color: #79B93C;
+    color: #ffffff;
+}
+
+.featured-section-btn{
+    display: block;
+    text-align: center;
+    margin: 20px auto;
+    padding: 15px 42px;
+    border-radius: 14px;
+    background: linear-gradient(90deg,#FFBA26,#FF9A0E);
+    color: var(--background);
+    transition:  0.5s ;
+    border:var(--primary) 2px solid;
+    box-shadow: 1px 5px 10px 1px #ff9b0e9a;
+}
+
+.featured-section-btn:hover{
+    box-shadow: 1px 12px 10px 1px #ff9b0ead;
+    background: var(--background);
+    color: var(--primary);
+}
+/* -------------------------- featured section end -------------------------- */
+
+/* -------------------------- search food section start -------------------------- */
+.search-food-section{
+    background-color: #FEFAF1;
+}
+
+.search-food-section .row{
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+} 
+
+.search-food-section .padding{
+    padding: 60px 0;
+}
+
+.search-food-section .section-heading .row p{
+    color: var(--primary);
+    font-size: 0.9rem;
+}
+
+.search-food-section .section-heading .row .icon-bg{
+    color: var(--background);
+    background-color: #ffb20e;
+    font-size: 2rem;
+    border-radius: 50%;
+    padding: 3px 0;
+    box-shadow: 0px 7px 10px 0px #ffb30e62;
+
+}
+
+.search-food-section .grid{
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 20px 0;
+}
+
+.search-food-section .grid img{
+    width: 100%;
+    border-radius: 50%;
+}
+
+.search-food-section .grid p{
+    margin-top: 20px;
+    text-align: center;
+}
+/* -------------------------- search food section end -------------------------- */
+
+/* -------------------------- app section start -------------------------- */
+.app-section{
+    background: linear-gradient(261.24deg, #FFAE00 63.85%, #FF8A00 111.94%);
+
+}
+
+#bg{
+    padding-top: 80px;
+    background-color: #FEEFD0;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+}
+
+.app-section .row {
+    background-color: var(--background);
+    box-shadow: 0px 27px 82px 0px #ffae0069;
+    padding: 25px;
+    border-radius: 30px;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 40px;
+}
+
+.border-left{
+    border-left: 3px solid #CFCFCF;
+    padding-left: 20px;
+}
+
+.border-right{
+    border-right: 3px solid #CFCFCF;
+    padding-right: 20px;
+
+}
+
+.app-section .app-feature{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.app-section .app-feature h2{
+    font-size: 2rem;
+    margin: 0 20px;
+    background: linear-gradient(92.84deg, #FB3C00 -47.72%, #FFB800 136.81%);
+    -webkit-background-clip: text; 
+    -webkit-text-fill-color: transparent;
+}
+
+.app{
+    display: grid;
+    grid-template-columns: 1fr 1fr ; 
+    align-items: center;
+    gap: 20px;
+}
+
+.app .img{
+    display: flex;
+    overflow: hidden;
+}
+
+.app .img img{
+    width: 100%;
+}
+
+.app .content>p{
+   width: 70%; 
+   margin: 10px 0;
+}
+
+.btn-links{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 15px;
+}
+
+.btn-links .grid{
+
+    grid-template-columns: auto 1fr; 
+    grid-template-rows: auto auto; 
+    align-items: center;
+}
+
+.btn-links button{
+    padding: 5px 20px;
+}
+
+.btn-links button i {
+    color: var(--secondary);
+    font-size: 2rem;
+    grid-row:  span 2;
+    margin-right: 10px;
+}
+
+.btn-links button p {
+    color: #827E7E;
+    font-size: 0.5rem;
+}
+
+.content>h2{
+    background: linear-gradient(92.84deg, #FFB800 -47.72%, #F17228 136.81%);
+    -webkit-background-clip: text; 
+    -webkit-text-fill-color: transparent;
+}
+
+.content>p{
+    color: #827E7E;
+
+}
+/* -------------------------- app section end -------------------------- */
+
+/* -------------------------- banner section start -------------------------- */
+.banner-section{
+    margin-top: 80px;
+}
+
+.banner-section .banner{
+    margin-bottom: 40px;
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+    background-color: #FFFFFF;
+    padding-left: 40px;
+    border-radius: 16px;
+    justify-content: center;
+    align-items: center;
+    column-gap: 40px;
+    overflow: hidden;
+}
+
+.banner-section .banner-1 .banner-content{
+    width: 35%;
+}
+
+.banner-section .banner-3 .banner-content{
+    width: 35%;
+}
+
+.banner-section .banner-2{
+    padding-left: 0;
+    padding-right: 20px;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.banner-section .banner-2 .banner-content{
+    width: 42%;
+
+}
+
+.banner-section .banner-3{
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.banner-section .banner-3 .banner-content{
+    width: 30%;
+}
+
+.banner-content h2{
+    margin-top: 30px;
+
+}
+
+.banner-content h2>span{
+    color: var(--primary);
+    font-size: 2rem;
+}
+
+.banner-content p{
+    margin: 20px 0;
+    width: 90%;
+    color: #616161B0;
+}
+
+.banner-content button{
+    margin-left: 0;
+    margin-top: 70px;
+    width: 100%;
+    border-radius: 5px;
+}
+
+.banner-section .banner .banner-image{
+    display: flex;
+    width: 80%;
+}
+
+.banner-section .banner .banner-image img{
+    width: 100%;
+}
+/* -------------------------- banner section end -------------------------- */
+
+/* -------------------------- last section start -------------------------- */
+.last-section div img{
+    position: relative;
+    display: flex;
+}
+
+.last-section img{
+    width: 100%;
+    position: relative;
+}
+
+.last-section .btn-container{
+    position: relative;
+}
+
+.last-section h2{ 
+    font-size: 2.5rem;
+    color: var(--background);
+    text-align: center;
+    z-index: 100;
+    position: absolute;
+    bottom: 130px;
+    left: 30%;
+    right: 25%;
+}
+
+.last-section button{
+    position: absolute;
+    bottom: 40px;
+    left: 40%;
+    right: 40%;
+    padding: 10px 20px;
+    background-color: var(--secondary);
+    color: var(--background);
+    border: 2px solid var(--secondary);
+    font-size: 1rem;
+    box-shadow: 0px 5px 10px 0px #fd725c88;
+}
+
+.last-section button:hover{
+    background-color: var(--background);
+    color: var(--secondary);
+    border: 2px solid var(--secondary);
+    box-shadow: 0px 10px 10px 0px #fd725c88;
+}
+/* -------------------------- last section end -------------------------- */
+
+/* -------------------------- footer start -------------------------- */
+footer{
+    background-color: #212121;
+    color: var(--background);
+    padding: 80px 0;
+}
+
+.border-bottom {
+    border-bottom: 1px solid #9E9E9E;
+}
+
+footer .width-80 .row{
+    margin-top: 20px;
+    padding-bottom: 80px ;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer .width-80 h3{
+    font-size: 1.5rem;
+}
+
+footer .list ul li{
+    list-style: none;
+    padding: 2.5px 0;
+}
+
+.heading{
+    margin-top: 80px;
+}
+
+.footer-links{
+    display: flex;
+    justify-content: space-between;
+    align-items:flex-start;
+    gap: 40px;
+}
+
+.from-social{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 130px;
+}
+
+.social-links{
+    width: 50%;
+    color: #8d8989;
+}
+
+.social-links h3{
+    margin: 20px 0;
+}
+
+.social-links i{
+    font-size: 1.5rem;
+}
+
+.social-links h4{
+    margin: 20px 0;
+    font-size: 1.1rem;
+}
+
+.social-links button{
+    margin-left: 20px;
+    box-shadow: 0px 14px 32px 0px #FFB20E4A;
+    background: linear-gradient(92.84deg, #FFB800 -47.72%, #FF8A00 136.81%);
+    color: var(--background);
+    border: 2px solid var(--primary);
+}
+
+.social-links button:hover{
+    box-shadow: 0px 14px 32px 0px #FFB20E4A;
+    background: var(--background);
+    color: var(--primary);
+}
+
+.social-links form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-links input{
+    padding: 11px 20px;
+    border-radius: 5px;
+    width: 70%;
+}
+/* -------------------------- footer end -------------------------- */
+
+
+
+
+/* -------------------------- mobile responsive -------------------------- */
+@media screen and (max-width:480px) {
+    .width-80{
+        width: 90vw;
+        margin: auto;
+    }
+
+    .row{
+        flex-wrap: wrap;
+    }
+
+    /* header */
+    header .row{
+        flex-wrap: nowrap;
+    }
+
+    header p{
+        display: none;
+    }
+
+    .img-container {
+        width: 100px;
+    }
+
+    .img-container img{
+        width: 200px;
+    }
+    
+    .header-btn button{
+    padding: 5px 10px;
+    }
+
+    /* hero section */
+    .hero-section .image{
+        display: none;
+    }
+
+    .order-details input{
+        width: 100%;
+        margin: auto;
+        padding:  10px 80px;
+    }
+
+    .order-form{
+        width: 100%;
+        margin-bottom: 25px;
+    }
+
+    .order-details{
+        flex-direction: column;
+    }
+
+    .order-details .fa-location-dot{
+        top : 63%;
+        left: 29%;
+    }
+
+    .order-details button{
+        width: 70%;
+        margin-top: 10px;
+    }
+
+    /* Card grid end */
+    .cards-grid {
+        grid-template-columns: auto ;
+        gap: 40px;
+        margin-top: 50px;
+    }
+
+    /* process section */
+    .process-section .grid{
+        grid-template-columns: 1fr ;
+    }
+
+    /* popular section */
+    .popular-section .grid{
+    grid-template-columns: 1fr ;
+    }
+
+    .popular-section .icon-bg{
+        display: none;
+    }
+
+    /* Featured section */
+    .featured-section .grid{
+        grid-template-columns: 1fr ;
+    }
+
+    /* search food section */
+    .search-food-section .grid{
+        grid-template-columns: 1fr 1fr ;
+    }
+
+    .search-food-section .section-heading .row .icon-bg{
+        display: none;
+    }
+    
+    .search-food-section .section-heading .row p{
+        font-size: 1rem;
+    }
+
+    /* app section */
+    #bg{
+        border-bottom-left-radius: 15%;
+        border-bottom-right-radius: 15%;
+        padding-bottom: 20px;
+    }
+
+    .border-left{
+        border: none;
+        border-top: 2px solid #CFCFCF;
+        padding: 20px 0;
+    }
+
+    .border-right{
+        border: none;
+        border-bottom: 2px solid #CFCFCF;
+        padding: 20px 0;
+    }
+
+    .app{
+        display: grid;
+        grid-template-columns: 1fr ; 
+        align-items: center;
+        gap: 20px;
+    }
+
+    .app .content{
+        text-align: center;
+    }
+
+    .app .content p{
+        margin: auto;
+        padding: 10px 0;
+    }
+
+    .btn-links button{
+        padding: 5px;
+        padding-right: 10px;
+    }
+
+    /* banner section */
+     .banner-section .banner{
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    column-gap: 40px;
+    }
+
+    .banner-section .banner {
+        padding: 20px;
+    }
+
+    .banner-section .banner .banner-image {
+        width: 100%;
+    }
+
+    .banner-section .banner .banner-content {
+        width: 80% ;
+    }
+
+    .banner-content h2 {
+        font-size: 1.8rem;
+    }
+
+    .banner-content h2 > span {
+        font-size: 1.8rem;
+    } 
+
+    .banner-content p {
+        width: 100%;
+        font-size: 0.95rem;
+    } 
+
+    .banner-content button {
+        width: 100%;
+        margin-top: 30px;
+    }
+
+    /* last section */
+    .last-section{
+        margin: 20px 0;
+    }    
+    .last-section div img{
+        position: relative;
+        display: flex;
+
+}
+
+.last-section img{
+    width: 100%;
+    position: relative;
+}
+
+.last-section .btn-container{
+    position: relative;
+}
+
+.last-section h2{ 
+    font-size: 2.5rem;
+    color: var(--background);
+    text-align: center;
+    z-index: 100;
+    position: absolute;
+    bottom: 130px;
+    left: 30%;
+    right: 25%;
+}
+
+.last-section button{
+    position: absolute;
+    bottom: 40px;
+    left: 40%;
+    right: 40%;
+    padding: 10px 20px;
+    background-color: var(--secondary);
+    color: var(--background);
+    border: 2px solid var(--secondary);
+    font-size: 1rem;
+    box-shadow: 0px 5px 10px 0px #fd725c88;
+}
+
+    /* footer */
+    footer .width-80 .row{
+        padding-bottom: 0px ;
+    }
+
+    .from-social{
+        display: flex;
+        flex-direction: column;
+        gap: 0px;
+    }
+
+    .social-links{
+        width: 100%;
+        margin-bottom: 25px;
+    }
+
+    .social-links h4{
+        font-size: 1rem;
+    }
+}
+
+/* -------------------------- tablet responsive -------------------------- */
+@media screen and (min-width:481px) and (max-width:780px) {
+    .width-80{
+        width: 90vw;
+        margin: auto;
+    }
+
+    .row{
+        flex-wrap: wrap;
+    }
+
+    /* header */
+    header p{
+        display: none;
+    }
+
+    /* hero section */
+    .hero-section .image{
+        display: none;
+    }
+
+    .order-details input{
+        width: 80vw;
+        margin: auto;
+        padding:  10px 80px;
+    }
+    .order-details input::placeholder{
+        padding: 0 180px;
+
+    }
+
+    .order-details {
+        width: 100%;
+    }
+
+    .order-form{
+        width: 90vw;
+        margin-bottom: 25px;
+    }
+
+    .order-details{
+        flex-direction: column;
+    }
+
+    .order-details .fa-location-dot{
+        top : 65.3%;
+        left: 29%;
+    }
+
+    .order-details button{
+        width: 50%;
+        margin-top: 10px;
+    }
+
+    /* Card grid end */
+    .cards-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 40px;
+        margin-top: 50px;
+    }
+
+
+    /* process section */
+    .process-section .grid{
+        grid-template-columns: 1fr 1fr;
+    }
+
+    /* popular section */
+    .popular-section .grid{
+    grid-template-columns: 1fr 1fr;
+    }
+
+    .popular-section .icon-bg{
+        display: none;
+    }
+
+    /* Featured section */
+    .featured-section .grid{
+        grid-template-columns: 1fr 1fr ;
+    }
+
+    /* search food section */
+    .search-food-section .grid{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .search-food-section .section-heading .row .icon-bg{
+        display: none;
+    }
+    
+    .search-food-section .section-heading .row p{
+        font-size: 1rem;
+    }
+
+}
+
